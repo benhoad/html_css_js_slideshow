@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HTML CSS JS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>HTML - CSS - JS</h1>
+					<h2>@benhoad</h2>
+				</section>
+				<section>
+					<section>
+						<h1>MVC</h1>
+					</section>
+					<section>
+						<h1><span class="faded">M</span>V<span class="faded">C</span></h1>
+					</section>
+					<section>
+						<h1>View</h1>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>H - T - M - L</h1>
+						<h3>Hypertext Markup Language</h3>
+					</section>
+					<section>
+						<h1>HTML</h1>
+						<h3>HTML is the <u><strong>structure</strong></u> of a web page</h3>
+					</section>
+					<section data-background-image="frame.jpg">
+
+					</section>
+					<section>
+						<h3>Example of some HTML</h3>
+						<pre><code data-trim>
+
+								<h1>Do not click that button</h1>
+								<p>Seriously!... don't do it...</p>
+								<button>Click Me!</button>
+
+							</code></pre>
+					</section>
+					<section>
+						<h3>What you'll see</h3>
+						<img src="screenshot.png"/>
+						<p>It's lacking style but that's ok! <span class="faded">because i do too >_></span></p>
+					</section>
+					<section>
+						<h3>Tags</h3>
+						<pre><code data-trim>
+								<div>A DIVision tag - most common</div>
+								<h1>Biggest Heading</h1>
+								<h2>Next Biggest Heading</h2>
+								<p>Paragraph</p>
+
+								<ul>
+									<li>
+										These tags are used for lists
+									</li>
+								</ul>
+
+								<button>Click Me!</button>
+								<img src="/images/photo.jpg" alt="this is an image tag" />
+
+							</code></pre>
+					</section>
+					<section>
+						<h3>
+							Attributes!
+						</h3>
+						<pre><code data-trim>
+
+								<img src="/images/photo.jpg" alt="this is an image tag" />
+
+								<div class='something' id='nav-bar'></div>
+								<p class="dark" id="main-text"></p>
+
+
+
+							</code></pre>
+							<p>All tags have the ability to assign a class and id.</p>
+					</section>
+					<section>
+						<h3>Ok so how does this apply to Rails?</h3>
+					</section>
+					<section>
+						<h3>In your Rails application folder:</h3>
+						<p>/app/views/</p>
+						<br/>
+						<h4>For example</h4>
+						<p>/app/views/application.erb</p>
+					</section>
+					<section>
+						<h3>Example with attributes!</h3>
+						<pre><code data-trim>
+
+							<h1>Do not click that button</h1>
+							<p id="main-text">Seriously!... don't do it...</p>
+							<button class="large-button">Click Me!</button>
+
+							</code></pre>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h1>C - S - S</h1>
+						<h3>Cascading Style Sheet</h3>
+					</section>
+					<section>
+						<h1>CSS</h1>
+						<h3>CSS is the <u><strong>STYLE</strong></u> of a web page</h3>
+					</section>
+					<section data-background-image="house.jpg">
+					</section>
+					<section>
+						<h3>Example of some CSS code</h3>
+						<pre><code data-trim>
+							body {
+								font-family: 'Helvetica', sans-serif;
+							}
+
+							#main-text{
+								color: red;
+							}
+
+							.large-button {
+								border: 1px solid black;
+								background: white;
+								padding:10px;
+							}
+
+							</code></pre>
+					</section>
+					<section>
+						<h3>This is what it looks like now some basic css</h3>
+						<img src="screenshot2.png"/>
+					</section>
+					<section>
+						<h3>In your Rails application folder:</h3>
+						<p>/app/assets/stylesheets/</p>
+						<br/>
+						<h4>For example</h4>
+						<p>/app/assets/stylesheets/application.css</p>
+					</section>
+					<section>
+						<h3>One last thing...</h3>
+						<h1>QUIRKS!</h1>
+						<pre><code data-trim>
+							* {
+								box-sizing: border-box;
+							}
+							</code></pre>
+							<p>The above snippet placed at the top of the css may fix a lot of frustration.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>J - S</h1>
+						<h3>JavaScript</h3>
+					</section>
+					<section>
+						<h1>JS</h1>
+						<h3>Javascript gives your webpage life! (or at the very least interactivity)</h3>
+					</section>
+					<section data-background-image="switch.jpg">
+					</section>
+					<section>
+						<h3>Example of some JS code</h3>
+						<pre><code data-trim>
+							$(".large-button").click(function(){
+							  alert("this is why we can't have nice things");
+							});
+
+							</code></pre>
+							<p>* This code uses a JS library called JQuery</p>
+					</section>
+					<section>
+						<h3>A maybe less confusing example</h3>
+						<pre><code data-trim>
+
+							//declaring the result
+
+							function result () {
+								alert("this is why we can't have nice things");
+							}
+
+
+							//attaching the action to the button
+
+							$(".large-button").click(result());
+
+							</code></pre>
+							<p>* This code uses a JS library called JQuery</p>
+					</section>
+					<section>
+						<h3>In your Rails application folder:</h3>
+						<p>/app/assets/javascripts/</p>
+						<br/>
+						<h4>For example</h4>
+						<p>/app/assets/javascripts/application.js</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Conclusion</h1>
+					</section>
+					<section>
+						<h1>We're putting the "v" in MVC</h1>
+					</section>
+					<section>
+						<h1>HTML is the structure</h1>
+					</section>
+					<section>
+						<h1>CSS is the style</h1>
+					</section>
+					<section>
+						<h1>JS is the devil</h1>
+					</section>
+					<section>
+						<h1>JS is the plumbing</h1>
+					</section>
+					<section>
+						<h1>JS is the power</h1>
+					</section>
+					<section>
+						<h1>JS is the doors</h1>
+					</section>
+					<section>
+						<h1>JS is the power doors</h1>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Further reading</h1>
+						<h3>http://www.w3schools.com/html</h3>
+						<h3>http://www.w3schools.com/css</h3>
+						<h3>http://www.w3schools.com/js</h3>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
